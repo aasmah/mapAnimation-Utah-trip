@@ -1,12 +1,26 @@
 // This array contains the coordinates for all bus stops between MIT and Harvard
 const canyons = [
-  [36.2093° N, 115.1995° W],
-  [37.2982° N, 113.0263° W],
-  [37.5930° N, 112.1871° W],
-  [38.7331° N, 109.5925° W],
-  [43.0225° N, 89.3466° W],
-  [38.2136° N, 109.9025° W],
-  [ 36.456086°N, -114.5330392°W],
+  [-114.442989,36.540734],
+
+[-112.9884495,37.200947],
+
+[-112.167047,37.662321],
+
+[-112.528548,37.048142],
+
+[-114.532962,36.485874],
+
+[-112.140631,36.054515],
+
+[-114.721977,36.141171],
+
+[-115.163235,36.100812],
+
+[-112.153309,37.712820],
+
+
+
+,
   
 ];
 // TODO: add your own access token
@@ -21,7 +35,7 @@ let map = new mapboxgl.Map({
 // TODO: add a marker to the map at the first coordinates in the array busStops. The marker variable should be named "marker"
 // Create a new marker.
 var marker = new mapboxgl.Marker()
-    //sample code marker.setLngLat([-71.092761, 42.357575]);
+    //sample code marker.setLngLat([-114.532962,36.485874]);
     //use upperCase / camelCase for setLngLat
 marker.setLngLat(canyons[0]);
 marker.addTo(map);
